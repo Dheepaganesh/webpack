@@ -35,5 +35,10 @@
     "lint": "eslint  src/**.js",
     "lint-fix": "eslint --fix src/**.js",
     "install": "yarn"
+  },
+  "husky":{
+    "hooks":{
+      "pre-commit":"yarn lint"
+    }
   }
 }
